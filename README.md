@@ -12,7 +12,13 @@ AIs for chess have long since exceeded the abilities of the top human chess play
 
 ## Data
 
-The two datasets used in this project can be obtained from [FICS](http://ficsgames.org/download.html) and [PGNMentor](http://www.pgnmentor.com/files.html).
+The two datasets used in this project can be obtained from [FICS](http://ficsgames.org/download.html) and [PGNMentor](http://www.pgnmentor.com/files.html). Once the chess game data has been obtained, it can be converted to training data by running:
+
+```python
+python process_data.py
+```
+
+Please note that the `main()` function in `process_data.py` should be edited to use your specific data paths.
 
 ## Training and Testing
 
