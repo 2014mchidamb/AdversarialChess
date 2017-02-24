@@ -32,4 +32,3 @@ python play.py
 
 ![Commandline Move 1](/Examples/cmdmove1.png) ![Commandline Move 2](/Examples/cmdmove2.png)
 
-![Nice board](/Examples/niceboard.png) ![Nice board tal move](/Examples/niceboardmovetal.png)
