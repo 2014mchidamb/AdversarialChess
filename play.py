@@ -28,12 +28,18 @@ with tf.Session() as sess:
 		move = "a1a1"
 		while True:
 			raw_move = raw_input("Please enter a move in UCI notation: ")
+			if len(raw_move) != 4:
+				print "Please use UCI notation."
+				continue
 			move = chess.Move.from_uci(raw_move)
 			if move in board.legal_moves:
 				board.push(move)
 				break
 			else:
 				print "Please enter a valid move."
+		if board.is_checkmate():
+			print "Congrats - you've won!"
+			break
 		# Computer response
 		score, comp_move = negamax(board, 0, -1, float('-inf'), float('inf'), magikarp)
 		print score, comp_move
