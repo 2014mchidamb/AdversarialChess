@@ -163,7 +163,9 @@ def gen_player_data(infile, outfile, player_name):
 
 def main():
 	datafile = '../Data/ficsgamesdb_2015_standard2000_nomovetimes_1429742.pgn'
+	playerfile = '../Data/Tal.pgn'
 	gen_board_pair_data(datafile, '../Data/training_data')
+	gen_player_data(playerfile, '../Data/player_data')
 
 if __name__ == '__main__':
 	main()		
